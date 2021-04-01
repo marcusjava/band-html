@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+
+    <title>Blog Band</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="navbar bg-dark">
+      <div class="flex">
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BAND</a></li>
+            <li><a href="#">TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">MORE</a></li>
+          </ul>
+        </nav>
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+
+    <!-- SlideShow -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade" onclick="plusSlides(1)">
+        <img src="images/band1.jpg" style="width: 100%" />
+        <div class="title">Chicago</div>
+        <p class="text">Thank you, Chicago - A night we won't forget.</p>
+      </div>
+
+      <div class="mySlides fade" onclick="plusSlides(1)">
+        <img src="images/band2.jpg" style="width: 100%" />
+        <div class="title">New York</div>
+        <p class="text">The atmosphere in New York is lorem ipsum.</p>
+      </div>
+
+      <div class="mySlides fade" onclick="plusSlides(1)">
+        <img src="images/band3.jpg" style="width: 100%" />
+        <div class="title">Los Angeles</div>
+        <p class="text">The atmosphere in New York is lorem ipsum.</p>
+      </div>
+    </div>
+
+    <!-- Band specs -->
+
+    <section class="band-specs py-4">
+      <div class="container text-center">
+        <h1>THE BAND</h1>
+        <p class="text-italic">We love music</p>
+        <p class="text-justify">
+          <strong>
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </strong>
+        </p>
+
+        <div class="grid grid-3">
+          <div>
+            <p>New York</p>
+            <img src="images/picture.jpg" alt="" />
+          </div>
+          <div>
+            <p>New York</p>
+            <img src="images/picture.jpg" alt="" />
+          </div>
+          <div>
+            <p>New York</p>
+            <img src="images/picture.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour dates -->
+    <section class="tour-dates bg-dark py-4">
+      <div class="container text-center">
+        <h1>TOUR DATES</h1>
+
+        <p class="text-italic">Remember to book your tickets!</p>
+
+        <ul>
+          <li>
+            September
+            <span class="alert-danger">Sold out</span>
+          </li>
+          <li>October <span class="alert-danger">Sold out</span></li>
+          <li>November</li>
+        </ul>
+        <div class="flex">
+          <div class="card">
+            <img src="images/newyork.jpg" alt="New York" />
+            <div class="card-body">
+              <p>New York</p>
+              <p>Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#" class="btn btn-dark">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/paris.jpg" alt="Paris" />
+            <div class="card-body">
+              <p>Paris</p>
+              <p>Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#" class="btn btn-dark">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/sanfran.jpg" alt="San FRancisco" />
+            <div class="card-body">
+              <p>San Francisco</p>
+              <p>Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#" class="btn btn-dark">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact">
+      <div class="container text-center">
+        <h1 class="md">CONTACT</h1>
+        <p class="text-italic my-3">Fan? Drop a note!</p>
+        <div class="flex">
+          <div class="contact-us">
+            <i class="fa fa-map-marker"></i> Chicago, US <br />
+            <i class="fa fa-phone"></i> Phone: +00 151515<br />
+            <i class="fa fa-envelope"></i> Email: mail@mail.com<br />
+          </div>
+          <div class="form-email grid">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Message" />
+            <p></p>
+            <a href="" class="btn btn-dark">SEND</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEction background image -->
+    <section class="img-background">
+      <img src="images/map.jpg" alt="Sky" />
+    </section>
+
+    <!-- footer follow me -->
+    <footer class="follow-me">
+      <div class="container text-center">
+        <div class="flex">
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-instagram-square fa-2x"></i>
+          <i class="fab fa-snapchat-square fa-2x"></i>
+          <i class="fab fa-pinterest-square fa-2x"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-linkedin fa-2x"></i>
+        </div>
+        <h4>
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+        </h4>
+      </div>
+    </footer>
+
+    <script src="slider.js"></script>
+  </body>
+</html>
